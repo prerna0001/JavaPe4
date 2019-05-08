@@ -16,12 +16,12 @@ public class AlphabeticalOrder {
     {
         System.out.println("Enter a string paragraph ");
         s1= input.nextLine();
-        s2= s1.replaceAll("\\s+","");
+        s2= s1.replaceAll("\\s+",""); //replacing all spaces with null
 
-        arr = s2.toCharArray();
+        arr = s2.toCharArray(); //converting s2 to char array
         Arrays.sort(arr);
 
-        s3= new String(arr);
+        s3= new String(arr); //converting char array to string
         System.out.println(arr);
     }
 

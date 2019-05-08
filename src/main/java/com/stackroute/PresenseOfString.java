@@ -17,7 +17,7 @@ public class PresenseOfString
         System.out.println("Enter string you want to search");
         String s1=scanner.nextLine();
 
-        if(s.contains(s1))
+        if(s.contains(s1)) //checking if its present in string
         {
             System.out.println("String is present");
         }

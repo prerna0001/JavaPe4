@@ -9,17 +9,16 @@ public class Occurrences
 {
     public void count()
     {
-        Scanner str=new Scanner(System.in);
+        Scanner s=new Scanner(System.in);
         System.out.println("Enter a String:");
-        String InputString=str.nextLine();
+        String InputString=s.nextLine();
 
-        Scanner reader = new Scanner(System.in);
         System.out.println("Enter the character to count in the  string:");
-        String InputCharacter= reader.nextLine();
+        String InputCharacter= s.nextLine();
 
         System.out.println("Length Of String:" + InputString.length());
 
-        int charcount = InputString.length() - InputString.replaceAll(InputCharacter, "").length();
+        int charcount = InputString.length() - InputString.replaceAll(InputCharacter, "").length(); //replacing all InputCharacter with null and the taking their diff
         System.out.println("Occurrence of character in String is: " + charcount);
     }
 

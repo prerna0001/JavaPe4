@@ -22,13 +22,13 @@ public class MultipleOccurrences
         System.out.println("Enter the string who's occurrence you want to find");
         substring=scanner.nextLine();
 
-        Pattern pattern=Pattern.compile(substring);
-        Matcher matcher=pattern.matcher(string);
+        Pattern pattern=Pattern.compile(substring); //returing compiled version of pattern
+        Matcher matcher=pattern.matcher(string); //matching it with string
 
         int count=0;
         while(matcher.find())
         {
-            count++;
+            count++; //counter increasing on every occurance
             System.out.print("its at ");
             System.out.print(matcher.start()+"-"+matcher.end());
         }

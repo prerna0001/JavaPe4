@@ -17,8 +17,8 @@ public class Replace
         System.out.println("Enter String");
         string1=scanner.nextLine();
 
-        String string2=string1.replaceAll("d","f");
-        String finalString=string2.replaceAll("l","t");
+        String string2=string1.replaceAll("d","f"); //replacing all d with f
+        String finalString=string2.replaceAll("l","t"); //replacing all l with t
 
         System.out.println("The String After Replacement is:\n "+finalString);
     }
